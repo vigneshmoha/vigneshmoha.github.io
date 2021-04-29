@@ -3,13 +3,14 @@ $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome";
 
 :root {
-    --font-default: "PT Serif", Georgia, "Times New Roman", serif;
-    --font-secondary: "Segoe UI", Helvetica, Arial, sans-serif;
-    --body-bg: #fafafa;
-    --body-color: #555;
-    --link-color: #222;
-    --link-color-hover: #000;
-    --link-border-color: rgba(0, 0, 0, .25);
+  --font-default: "PT Serif", Georgia, "Times New Roman", serif;
+  --font-secondary: "Segoe UI", Helvetica, Arial, sans-serif;
+  --body-bg: #fafafa;
+  --body-color: #555;
+  --link-color: #222;
+  --link-color-hover: #000;
+  --link-border-color: rgba(0, 0, 0, .25);
+  --link-color__articles: #36f;
 	--heading-color: #333;
 	--hr-color: rgba(0, 0, 0, .1);
 	--kbd-color: var(--body-color);
@@ -26,6 +27,7 @@ $fa-font-path: "~font-awesome/fonts";
     --body-color: #6c757d;
     --link-color: rgba(255, 255, 255, 0.65);
     --link-color-hover: #fff;
+    --link-color__articles: #36f;
     --link-border-color: rgba(255, 255, 255, 0.3);
     --heading-color: #dee2e6;
     --kbd-color: rgba(255, 255, 255, 0.5);
@@ -58,6 +60,12 @@ a {
 }
 a:hover {
     color: var(--link-color-hover);
+}
+.container {
+  max-width: 800px;
+}
+.article a {
+  color: var(--link-color__articles);
 }
 @media(min-width: 48em) {
     html {
