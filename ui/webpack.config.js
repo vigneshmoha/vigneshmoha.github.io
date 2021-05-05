@@ -15,6 +15,18 @@ module.exports = {
       path: path.resolve(__dirname, 'dist'),
       clean: true,
     },
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          vendor: {
+            test: /node_modules/,
+            chunks: 'initial',
+            name: 'vendor',
+            enforce: true
+          }
+        }
+      }
+    },
     module:{
         rules: [
             {
@@ -69,7 +81,8 @@ module.exports = {
             template: './src/index.html',
             inject: true,
             chunks: ['index'],
-            filename: 'index.html'
+            filename: 'index.html',
+            minify: false
         }),
         new CopyWebpackPlugin({
           patterns: [

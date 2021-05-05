@@ -290,3 +290,4 @@ cython_debug/
 
 # pelican output folders
 blog-pelican-src/output/
+pelican-themes-master
