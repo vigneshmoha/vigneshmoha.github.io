@@ -34,6 +34,8 @@ node_modules
 # Optional REPL history
 .node_repl_history
 
+# Blob files
+*.tar.gz
 
 ### Bower ###
 bower_components
@@ -285,3 +287,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# pelican output folders
+blog-pelican-src/output/
